@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { json } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 //import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 
 function Register(){
@@ -28,7 +29,10 @@ function Register(){
         navigate('/add');
     }
     return (
+         <>
+         <Header />
          <div className='col-sm-6 offset-sm-3'>
+            
             <h1>Register User</h1>
             <br/>
             <div>
@@ -41,6 +45,7 @@ function Register(){
                 <button onClick={signUp} className='btn btn-primary'>Submit</button>
             </div>
          </div>
+         </>
     );
 }
 

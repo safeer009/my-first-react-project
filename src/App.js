@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Header />
+    {/* <Header /> */}
       <Routes>
          <Route path="/login" element={<Login />} /> {/* Route for Login component */}
          <Route path="/register" element={<Register />} /> {/* Route for Login component */}
